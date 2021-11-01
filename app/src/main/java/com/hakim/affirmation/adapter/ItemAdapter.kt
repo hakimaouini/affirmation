@@ -6,10 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.hakim.affirmation.MainActivity
 import com.hakim.affirmation.R
 import com.hakim.affirmation.model.Affirmation
 
-class ItemAdapter {
+class ItemAdapter(mainActivity: MainActivity, myDataset: List<Affirmation>) {
     class ItemAdapter(
         private val context: Context,
         private val dataset: List<Affirmation>
